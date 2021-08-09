@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "next-images": "^1.8.1",
+    "react-helmet": "^6.1.0"
+  }
+}

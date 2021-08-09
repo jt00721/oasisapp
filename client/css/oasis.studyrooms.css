@@ -1,0 +1,168 @@
+#studyrooms-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 57px;
+    font-weight: bolder;
+    color: #E9F7CA;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9A03F;
+}
+
+.center-image img {
+    max-height: 300px;
+}
+
+.container span {
+    margin: auto;
+}
+
+.main-page-text h2 {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 57px;
+    font-weight: bolder;
+    color: #E9F7CA;
+    margin-right: 30px;
+}
+
+.main-page-text p {
+    display: inline-block;
+    font-size: 22px;
+    color: #EAEFB1;
+}
+
+.main-page-text h5 {
+    font-size: 35px;
+    color: #EAEFB1;
+}
+
+.navbar-brand h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 65px;
+    color: #E9F7CA;
+    letter-spacing: 20px;
+}
+
+#navBrand h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    color: #E9F7CA;
+    letter-spacing: 10px;
+}
+
+.nav-item a {
+    color: #EAEFB1 !important;
+    margin-left: 58px;
+}
+
+#mainNav ul {
+    margin-left: auto;
+}
+
+#footerNav ul {
+    margin-left: auto;
+}
+
+.main-page-text h4 {
+    font-size: 30px;
+    color: #F7D488;
+}
+
+hr {
+    height: 2px !important;
+    margin: 0;
+    color: #E9F7CA;
+    background-color: currentColor;
+    border: 0;
+    opacity: 1;
+}
+
+.footer-icon img {
+    max-height: 30px;
+}
+
+#footerNavbar {
+    padding-bottom: 0;
+}
+
+center {
+    margin-bottom: 15px;
+    color: #EAEFB1;
+}
+
+#studyrooms-title, #studyrooms-description, #center-icons, .study-rooms {
+    display: flex;
+    text-align: center;
+
+}
+
+#studyrooms-description p {
+    margin: auto;
+    color: #EAEFB1;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#center-icons span {
+    margin: auto;
+}
+
+#center-icons img {
+    max-width: 130px;
+}
+
+#center-icons {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.study-rooms {
+    margin-bottom: 20px;
+}
+
+.study-rooms h4 {
+    margin: auto;
+    color: #E9F7CA;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 57px;
+    font-weight: bolder;
+    color: #E9F7CA;
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #EAEFB1;
+    text-align: center;
+}
+
+#me{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+#me video{
+    position: relative !important;
+}
+#remote-container{
+    display: flex;
+}
+#remote-container video{
+    height: auto;
+    position: relative !important;
+}
