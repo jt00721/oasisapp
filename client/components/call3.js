@@ -3,10 +3,10 @@ import AgoraRTC from "agora-rtc-sdk";
 const {RtcTokenBuilder, RtmTokenBuilder, RtcRole, RtmRole} = require('agora-access-token')
 
 const USER_ID = Math.floor(Math.random() * 1000000001);
-const APP_ID = "8ae860182cc541a7a68dbc1bcabc2365";
+const APP_ID = "f754a2a9360647928e07dbdb05b8e90c";
 
-const appCertificate = '8bedb976b27040bd8dea20deaca3fb0a';
-const channelName = 'room1';
+const appCertificate = 'e28debb7eecf470980eb7ec8776042da';
+const channelName = 'room4';
 const userid = Math.floor(Math.random() * 1000000001);
 const role = RtcRole.PUBLISHER;
  
@@ -16,10 +16,15 @@ const currentTimestamp = Math.floor(Date.now() / 1000)
  
 const privilegeExpiredTs = currentTimestamp + expirationTimeInSeconds
  
+// IMPORTANT! Build token with either the uid or with the user account. Comment out the option you do not want to use below.
  
 // Build token with uid
 const tokenA = RtcTokenBuilder.buildTokenWithUid(APP_ID, appCertificate, channelName, userid, role, privilegeExpiredTs);
 console.log("Token With Integer Number Uid: " + tokenA);
+ 
+// Build token with user account
+// const tokenB = RtcTokenBuilder.buildTokenWithAccount(APP_ID, appCertificate, channelName, account, role, privilegeExpiredTs);
+// console.log("Token With UserAccount: " + tokenB);
 
 let client = AgoraRTC.createClient({ mode: "live", codec: "h264" });
 

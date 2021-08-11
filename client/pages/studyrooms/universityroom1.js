@@ -1,31 +1,44 @@
-import React from 'react';
+import React, { Component } from "react";
 
-import useScript from '../../hooks/use-script';
+import dynamic from "next/dynamic";
 
-const Universityroom1 = props => {
-    useScript('https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.6.2.js')
-    useScript('/js/oasis.universityroom1.js');
-
-
-  // rest of your component
-  return (
-    <div>
-        <div className="container" id="studyrooms-text">
-            <div id="studyrooms-title">
-                <h3>Room 1 - University Students<br/><small style={{fontSize: '14pt'}}>Powered by Agora.io</small></h3>
-            </div>
-            <div id="studyrooms-description">
-                <p>Welcome To Our University Students' Room 1!<br/>Always Be Respectful Towards Each Other.<br/>Remember You Will Achieve More Together.<br/>Join The Oasis Student Community.</p>
-            </div>
-        </div>
-        <h4>Local video</h4>
-        <div id="me"></div>
-        <h4>Remote video</h4>
-        <div id="remote-container"></div>
-
-        <hr></hr>
-    </div>
+const Live = dynamic(
+  () => {
+    return import("../../components/call3");
+  },
+  { ssr: false }
 );
+
+class Universityroom1 extends Component {
+    constructor(props) {
+        super(props);
+        // if (typeof window === 'undefined') {
+        //     global.window = {}
+        // }
+        this.state = {
+          channel: "room4"
+        };
+      }
+    
+      selectChannel = channel => {
+        this.setState({ channel });
+      };
+    
+      render() {
+        return (
+          <div className="App">
+              <div className="container" id="studyrooms-text">
+                <div id="studyrooms-title">
+                    <h3>Room 1 - University Students<br/><small style={{fontSize: '14pt'}}>Powered by Agora.io</small></h3>
+                </div>
+                <div id="studyrooms-description">
+                    <p>Welcome To Our University Students' Room 1!<br/>Always Be Respectful Towards Each Other.<br/>Remember You Will Achieve More Together.<br/>Join The Oasis Student Community.</p>
+                </div>
+              </div>
+            <Live channel={this.state.channel} />
+          </div>
+        );
+      }
 }
 
 export default Universityroom1
