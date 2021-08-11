@@ -30,7 +30,7 @@ export default ({ currentUser }) => {
                         </div>
                     </nav>
 
-                    <div class="footer-icon">
+                    <div className="footer-icon">
                         <a href="https://www.instagram.com/oasisstudygroup/">
                             <img src="/Icon-metro-instagram@2x.png"/>
                         </a>
