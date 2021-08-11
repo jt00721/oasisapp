@@ -3,10 +3,10 @@ import AgoraRTC from "agora-rtc-sdk";
 const {RtcTokenBuilder, RtmTokenBuilder, RtcRole, RtmRole} = require('agora-access-token')
 
 const USER_ID = Math.floor(Math.random() * 1000000001);
-const APP_ID = "8ae860182cc541a7a68dbc1bcabc2365";
+const APP_ID = "4ad11ee16a2c497a89fd31655b5e51e7";
 
-const appCertificate = '8bedb976b27040bd8dea20deaca3fb0a';
-const channelName = 'room1';
+const appCertificate = 'ce7162684af446a895672eb8814bc048';
+const channelName = 'room6';
 const userid = Math.floor(Math.random() * 1000000001);
 const role = RtcRole.PUBLISHER;
  
