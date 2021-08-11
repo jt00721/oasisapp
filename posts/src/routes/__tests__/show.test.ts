@@ -21,11 +21,11 @@ it('returns the post if the post is found', async () => {
     })
     .expect(201);
 
-  const ticketResponse = await request(app)
+  const postResponse = await request(app)
     .get(`/api/posts/${response.body.id}`)
     .send()
     .expect(200);
 
-  expect(ticketResponse.body.message).toEqual(message);
-  expect(ticketResponse.body.date).toEqual(date);
+  expect(postResponse.body.message).toEqual(message);
+  expect(postResponse.body.date).toEqual(date);
 });

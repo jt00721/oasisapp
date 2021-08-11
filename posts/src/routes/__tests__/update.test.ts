@@ -99,10 +99,10 @@ it('updates the post provided valid input', async () => {
     })
     .expect(200);
 
-  const ticketResponse = await request(app)
+  const postResponse = await request(app)
     .get(`/api/posts/${response.body.id}`)
     .send();
 
-  expect(ticketResponse.body.message).toEqual('new message');
-  expect(ticketResponse.body.date).toEqual('09/08/21');
+  expect(postResponse.body.message).toEqual('new message');
+  expect(postResponse.body.date).toEqual('09/08/21');
 });
